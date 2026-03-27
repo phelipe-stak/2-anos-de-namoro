@@ -56,12 +56,18 @@
       font-size: 16px;
       color: #b30000;
       text-align: left;
+      animation: aparecer 1s ease;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     img {
       width: 100%;
-      border-radius: 10px;
-      margin-top: 10px;
+      border-radius: 15px;
+      margin-top: 15px;
     }
   </style>
 </head>
@@ -69,7 +75,7 @@
 <body>
 
   <div class="container">
-    <h2> 28/04/2024 💖</h2>
+    <h2>Tenho algo especial pra você 💖</h2>
 
     <p>🌊 Dica 1: É como eu te chamo...</p>
     <p>📅 Dica 2: Um dia muito especial pra gente...</p>
@@ -84,9 +90,9 @@
       <!-- 🎵 Música -->
       <iframe style="border-radius:12px" 
       src="https://open.spotify.com/embed/track/31VOknKjFrEX47bZXzqcoF" 
-      width="100%" height="80" frameBorder="0"></iframe>
+      width="100%" height="80" frameborder="0"></iframe>
 
-      <!-- 📸 Foto -->
+      <!-- 📸 Foto (AGORA VAI APARECER DEPOIS DO LOGIN) -->
       <img src="foto.jpg">
 
       <!-- 💌 Mensagem -->
@@ -111,8 +117,8 @@
 
   <script>
     function verificar() {
-      var id = document.getElementById("id").value;
-      var senha = document.getElementById("senha").value;
+      var id = document.getElementById("id").value.trim();
+      var senha = document.getElementById("senha").value.trim();
 
       if(id === "amor" && senha === "2804") {
         document.getElementById("mensagem").style.display = "block";
