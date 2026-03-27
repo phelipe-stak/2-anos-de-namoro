@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  
+
   <!-- 🔥 ESSENCIAL PRA CELULAR -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,16 +16,17 @@
       background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
       background-size: cover;
 
-      /* Centralização perfeita */
       display: flex;
       justify-content: center;
       align-items: center;
+
       min-height: 100vh;
+      min-height: 100dvh; /* 🔥 corrige no celular */
     }
 
     .container {
       background: rgba(255, 255, 255, 0.9);
-      padding: 30px;
+      padding: 25px;
       border-radius: 15px;
       width: 90%;
       max-width: 340px;
@@ -88,7 +89,7 @@
     <p>🌊 Dica 1: É como eu te chamo...</p>
     <p>📅 Dica 2: Um dia muito especial pra gente...</p>
 
-    <input type="text" id="id" placeholder="Digite o ID"><br>
+    <input type="text" id="id" placeholder="Digite o ID (A maiúsculo)"><br>
     <input type="password" id="senha" placeholder="Digite a senha"><br>
 
     <button onclick="verificar()">Descobrir ❤️</button>
