@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- ✅ CORREÇÃO CELULAR -->
+  <!-- 📱 RESPONSIVO -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Uma surpresa pra você ❤️</title>
@@ -13,22 +13,21 @@
       margin: 0;
       font-family: Arial, sans-serif;
       text-align: center;
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center;
       background-size: cover;
 
-      /* ✅ CENTRALIZAÇÃO */
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
       min-height: 100dvh;
+      padding: 20px;
     }
 
     .container {
       background: rgba(255, 255, 255, 0.9);
-      padding: 25px;
+      padding: 20px;
       border-radius: 15px;
-      width: 90%;
+      width: 100%;
       max-width: 340px;
       box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
     }
@@ -126,7 +125,7 @@
 
   <script>
     function verificar() {
-      var id = document.getElementById("id").value.trim();
+      var id = document.getElementById("id").value.trim().toLowerCase();
       var senha = document.getElementById("senha").value.trim();
 
       if(id === "amor" && senha === "2804") {
